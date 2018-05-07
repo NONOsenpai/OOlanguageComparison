@@ -1,26 +1,51 @@
 # Instance reference name in data type (class) 
 
-## JAVA
- * Primitive data types in Java
-  Type	Description	Default	Size	Example Literals
-  boolean	true or false	false	1 bit	true, false
-  byte	twos complement integer	0	8 bits	(none)
-  char	Unicode character	\u0000	16 bits	'a', '\u0041', '\101', '\\', '\'', '\n', 'ß'
-  short	twos complement integer	0	16 bits	(none)
-  int	twos complement integer	0	32 bits	-2, -1, 0, 1, 2
-  long	twos complement integer	0	64 bits	-2L, -1L, 0L, 1L, 2L
-  float	IEEE 754 floating point	0.0	32 bits	1.23e100f, -1.23e-100f, .3f, 3.14F
-  double	IEEE 754 floating point	0.0	64 bits	1.23456e300d, -1.23456e-300d, 1e1d
+## Java
+In Java however their value types are called primitive types. These primitive types are: boolean, byte, char, short, int, long, float and double.
+* Value Type
+Following are some code examples of Java primitive types.
+```
+int a = 2;
+char b = 'b';
+boolean f = false;
+double d = 3.40;
+```
+* Reference Type
+Assume we have a class called Ball. The following code will show example of a reference type using class Ball. It is important to note that Java does not pass reference types to functions by reference. They are passed by value.
+```
+Ball b = new Ball();
 
-
-* Range of numeric data types in Java
-  Type	Size	Range
-  byte	8 bits	-128 .. 127
-  short	16 bits	-32,768 .. 32,767
-  int	32 bits	-2,147,483,648 .. 2,147,483,647
-  long	64 bits	-9,223,372,036,854,775,808 .. 9,223,372,036,854,775,807
-  float	32 bits	3.40282347 x 1038, 1.40239846 x 10-45
-  double	64 bits	1.7976931348623157 x 10308, 4.9406564584124654 x 10-324
+Ball a = b;
+// Ball a and b will reference the same object
+```
+* Reference Passed By Value
+```
+public void tricky(Point arg1, Point arg2)
+{
+  arg1.x = 100;
+  arg1.y = 100;
+  Point temp = arg1;
+  arg1 = arg2;
+  arg2 = temp;
+}
+public static void main(String [] args)
+{
+  Point pnt1 = new Point(0,0);
+  Point pnt2 = new Point(0,0);
+  System.out.println("X: " + pnt1.x + " Y: " +pnt1.y); 
+  System.out.println("X: " + pnt2.x + " Y: " +pnt2.y);
+  System.out.println(" ");
+  tricky(pnt1,pnt2);
+  System.out.println("X: " + pnt1.x + " Y:" + pnt1.y); 
+  System.out.println("X: " + pnt2.x + " Y: " +pnt2.y);  
+}
+/* Print out would be:
+   X: 0 Y: 0
+   X: 0 Y: 0
+   X: 100 Y: 100
+   X: 0 Y: 0
+*/
+```
 
 
 ## Python
