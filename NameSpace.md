@@ -16,4 +16,4 @@
   Then a folder with the given package name is created in the specified destination, and the compiled class files will be placed in that folder.
   
 ## Python
-Name spaces are implemented in Python by using a Dictionary -- Key to value lookup. Some examples of a Python name space are global names of a module, local names a function, built-in names such as abs() and cmp(). The name spaces exist only in the scope they are created.
+* Name spaces are implemented in Python by using a Dictionary -- Key to value lookup. Some examples of a Python name space are global names of a module, local names a function, built-in names such as abs() and cmp(). The name spaces exist only in the scope they are created.
