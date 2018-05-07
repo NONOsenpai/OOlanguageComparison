@@ -7,19 +7,41 @@
 * There is no direct equivalent of a destructor in java.
 * For classes that need to explicitly tidy up, the convention is to define a close method and use finalize only for sanity checking
 
-## Python 
-* Classes in Python are created by using the 'class' keyword, the class name, and then a colon before inserting everything needed in the class.
-For example:
+## C# 
+* Use class keyword to define a class.
 ```
-class Car:
-  def drive(self):
-    print("This car is being driven.")
+public  class  Customer  
+{  
+// Fields, properties, methods and events go here...  
+}
 ```
-Creates a car class with the drive function.
+* The new keyword is used to create a new instance.
+```
+Customer object1 = new Customer();
+```
+* Constructing/initializing:
+```
+   // Constructor that takes no arguments.
+    public Person()
+    {
+        name = "unknown";
+    }
 
-To instantiate a new instance of the class, the user would create a variable and assign it to the class;:
+    // Constructor that takes one argument.
+    public Person(string nm)
+    {
+        name = nm;
+    }
 ```
-x = Car()
+* C# also implements destructing/de-initializing.  Finalizers are used to destruct instances of classes.  Finalizers cannot be defined in structs, are only used with classes, a class can only have one finalizer, finalizers cannot be inherited or overloaded, finalizers cannot be called (they are invoked automatically), and a finalizer does not take modifiers or have parameters.
+
+For example, the following is a declaration of a finalizer for the Car class.
 ```
-This calls the '__init__()' function on the class. This function can be extended if the creator wanted the instance to do additional features, such as assign variable or run additional functions, in the instantiation period.
-To de-initialize a class in Python the developer can use the close function on an object. This will delete the reference to the object. If the developer wanted to reuse the object in a pool, the developer could modify the close function to just erase the data inside. 
+class Car
+{
+    ~Car()  // destructor
+    {
+        // cleanup statements...
+    }
+}
+```
