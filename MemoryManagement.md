@@ -19,12 +19,4 @@ The garbage collector checks to see if there are any objects in the heap that ar
 In the common language runtime, the managed heap always knows the actual type of an object, and the metadata information is used to determine which members of an object refer to other objects.
 
 ### Automatic reference counting?
-Not used in C# (it uses Garbage Collection) - an e-mail from Brian Harry explains why:
-
-> “We initially started with the assumption that the solution would take the form of automatic ref counting (so the programmer couldn't forget) plus some other stuff to detect and handle cycles automatically. ...we ultimately concluded that this was not going to work in the general case.
-...
- In summary:
-We feel that it is very important to solve the cycle problem without forcing programmers to understand, track down and design around these complex data structure problems.
-We want to make sure we have a high performance (both speed and working set) system and our analysis shows that using reference counting for every single object in the system will not allow us to achieve this goal.
-For a variety of reasons, including composition and casting issues, there is no simple transparent solution to having just those objects that need it be ref counted.
-We chose not to select a solution that provides deterministic finalization for a single language/context because it inhibits interop with other languages and causes bifurcation of class libraries by creating language specific versions.
+Chose not to select a solution that provides deterministic finalization for a single language/context because it inhibits interop with other languages and causes bifurcation of class libraries by creating language specific versions.
