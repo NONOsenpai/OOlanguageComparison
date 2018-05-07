@@ -3,7 +3,7 @@
 This project tries to compare following two Object Oriented languages:
 
 * JAVA
-* Python
+* C#
 
 ### My Team:
 
