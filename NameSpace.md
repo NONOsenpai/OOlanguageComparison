@@ -15,5 +15,18 @@
       javac -d Destination_folder file_name.java
   Then a folder with the given package name is created in the specified destination, and the compiled class files will be placed in that folder.
   
-## Python
-* Name spaces are implemented in Python by using a Dictionary -- Key to value lookup. Some examples of a Python name space are global names of a module, local names a function, built-in names such as abs() and cmp(). The name spaces exist only in the scope they are created.
+## C#
+* .NET Framework uses namespaces to organize its many classes. The ```namespace``` keyword is used to declare a scope. The ability to create scopes within your project helps organize code and lets you create globally-unique types.  Declaring your own namespaces can help you control the scope of class and method names.
+```
+namespace  SampleNamespace  
+{  
+	class  SampleClass  
+	{  
+		public  void  SampleMethod()  
+		{  
+			System.Console.WriteLine(  
+			"SampleMethod inside SampleNamespace");  
+		}  
+	}  
+}
+```
