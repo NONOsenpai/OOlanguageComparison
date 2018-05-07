@@ -14,6 +14,12 @@
 * Multithreaded
 * Distributed
 
-## Python
-* While the Python language has evolved over the years by taking in aspects of other languages, it does have a few specific features. First, Python explicitly passes self as a form of a parameter to object member functions. The language also combines things such as data entry - prompting the user for entry and reading it in - to a simple function called 'input()'. Finally, the language incorporates a large number of datatypes such as ordereddict, namedtupke, array, list, tuple, diction, etc; making it popular in the scientific community.
+## C# 
+* Assemblies: This is a level of encapsulation above the typical namespaces or modules in most languages. Assemblies are similar to the idea of static/dynamic libraries in C or JAR files in Java. Notably, you can mark members as internal, which makes them public within the same assembly, but private to everybody outside the assembly. 
+* Cross-language compatibility is first-class (not just for C): C# runs in the Common Language Runtime, which was designed from the beginning to support interoperability between languages.
+* Properties are first-class: No longer need to write explicit getter and (optional) setter methods.
+* Listeners are first-class: Classes can declare an event Foo with addFooListener and removeFooListener functionality built in.
+* Foreign Methods are first-class: C# calls these extension methods.
+* Partial Classes: Allows a class’s members to be defined in multiple files. Useful to add functionality to a generated class (for example, from a parser generator) without those modifications getting lost when the class is next regenerated.
+
 
