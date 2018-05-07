@@ -24,7 +24,7 @@ This project tries to compare following two Object Oriented languages:
     * What types does the language support?
     * Are both reference and value types supported?
     * Can new value types be created?
-* [Classes](Class.md)
+* [Classes](Classes.md)
   * Defining
   * Creating new instances
   * Constructing/initializing
