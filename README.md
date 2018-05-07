@@ -54,7 +54,7 @@ This project tries to compare following two Object Oriented languages:
   * Which does the language use? (null/nil/etc.)
   * Does the language have features for handling null/nil references?
 * [Errors and exception handling](Error.md)
-* [Lambda expressions, closures, or functions as types](FunctionalProgramming.md)
+* [Lambda expressions, closures, or functions as types](LambdaExpression.md)
 * [Implementation of listeners and event handlers](ImplementationOfLicense.md)
 * [Singleton](Singleton.md)
   * How is a singleton implemented?
