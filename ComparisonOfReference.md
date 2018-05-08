@@ -1,6 +1,6 @@
 # Comparisons of References and Values
 
-## JAVA
+## Java
 * reference：
   There are 4 types of references in JAVA:
   – Strong References
