@@ -1,5 +1,16 @@
 # Inheritance / extension
 
+## Java 
+- Supports inheritance
+- Does not support multiple inheritance 
+- Classes that dont already inherit from another class always inherit from Object which creates an inheritance tree
+- Cannot change the protection level of members of base class
+
+```java 
+public class dog() extends pet{
+}
+```
+
 ## C#
 * C# and .NET support single inheritance only. However, inheritance is transitive, which allows you to define an inheritance hierarchy for a set of types.  
 ```
