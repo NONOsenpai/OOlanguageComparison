@@ -1,5 +1,12 @@
 # Memory Management
 
+## Java
+* Built-in garbage collection.
+* Java Memory Model(JVM).
+* JVM memory is divided into separate parts. At broad level, JVM Heap memory is physically divided into two parts – Young Generation and Old Generation.
+* Young generation is the place where all the new objects are created. When young generation is filled, garbage collection is performed. This garbage collection is called Minor GC. Young Generation is divided into three parts – Eden Memory and two Survivor Memory spaces.
+* Old Generation memory contains the objects that are long lived and survived after many rounds of Minor GC. Usually garbage collection is performed in Old Generation memory when it’s full. Old Generation Garbage Collection is called Major GC and usually takes longer time.
+* An object becomes eligible for Garbage collection or GC if it is not reachable from any live threads or by any static references.
 
 ## C# 
 For the majority of the objects that your app creates, you can rely on .NET's garbage collector to handle memory management. 
