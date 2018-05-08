@@ -1,4 +1,18 @@
 # Comparisons of References and Values
+
+## JAVA
+* reference：
+  There are 4 types of references in JAVA:
+  – Strong References
+  – Soft References
+  – Weak References
+  – Phantom References
+
+  Those references differ only by the way the garbage collector manages them. If you’ve never heard of them, it means that you  were only using the strong ones. Knowing the difference can help you, especially if you need to store temporary objects and can’t use a real caching library like eHcache or Guava.
+
+* value：
+  Our mantra is “codes like a class, works like an int.” Of course, the devil is in the details; there are going to be features of classes that do not make sense for value types. Some questions we might want to ask about value classes are as follows, with tentative answers where appropriate. Where a comparison with primitives would make sense, the answers for these questions for values are the same as they would be for primitives.
+
 ## C# 
 "Equals" and "==" will compare by reference by default if they're not overriden / overloaded in a subclass. ReferenceEquals will always compare by reference.  ```String.Compare``` a compares two specified String objects and returns an integer that indicates their relative position in the sort order.  ```String.CompareTo``` compares this instance with a specified object or String and returns an integer that indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified object or String.
 
